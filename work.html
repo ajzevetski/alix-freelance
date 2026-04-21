@@ -74,16 +74,16 @@ nav {
 
 /* CAROUSEL SIDE */
 .carousel { position: relative; }
-.carousel-track-wrap { overflow: hidden; border-radius: 8px; }
-.carousel-track { display: flex; transition: transform 0.5s cubic-bezier(0.4,0,0.2,1); }
+.carousel-track-wrap { overflow: hidden; border-radius: 8px; width: 100%; }
+.carousel-track { display: flex; transition: transform 0.5s cubic-bezier(0.4,0,0.2,1); width: 100%; }
 .carousel-slide {
-  min-width: 100%; aspect-ratio: 16/10; flex-shrink: 0;
-  background: var(--acc-lt); overflow: hidden;
-  display: flex; align-items: flex-start; justify-content: center;
+  min-width: 100%; width: 100%; height: 400px; flex-shrink: 0;
+  background: var(--acc-lt); overflow: hidden; position: relative;
+  display: flex; align-items: center; justify-content: center;
   font-family: var(--font-d); font-style: italic; color: var(--accent);
-  font-size: 0.9rem; opacity: 0.5;
+  font-size: 0.9rem;
 }
-.carousel-slide img { width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; flex-shrink: 0; }
+.carousel-slide img { position: absolute; top: 0; left: 0; width: 100%; height: auto; display: block; }
 
 /* CAROUSEL CONTROLS */
 .carousel-controls { display: flex; align-items: center; justify-content: space-between; margin-top: 1.25rem; }
