@@ -101,6 +101,8 @@ nav {
 .carousel-track-wrap .scroll-hint { position: absolute; bottom: 1rem; left: 50%; transform: translateX(-50%); z-index: 10; }
 .carousel-slide.mobile-slide { height: 600px; background: #1a1a1a; justify-content: center; }
 .carousel-slide.mobile-slide img { width: auto; height: 100%; max-width: 100%; object-fit: contain; margin: 0 auto; display: block; position: static; }
+.mobile-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; align-items: start; }
+.mobile-img { width: 100%; height: auto; border-radius: 12px; display: block; }
 
 /* CAROUSEL CONTROLS */
 .carousel-controls { display: flex; align-items: center; justify-content: space-between; margin-top: 1.25rem; }
@@ -292,27 +294,10 @@ footer small { font-size: 0.7rem; color: var(--muted); opacity: 0.5; }
         <div class="proj-meta-row"><span class="proj-meta-label">Type</span><span class="proj-meta-val">Redesign</span></div>
       </div>
     </div>
-    <div class="carousel" data-carousel>
-      <div class="carousel-track-wrap">
-        <div class="carousel-track">
-          <div class="carousel-slide mobile-slide"><img src="earth-hero-homepage.jpg" alt="Earth Hero homepage"></div>
-          <div class="carousel-slide mobile-slide"><img src="browse-actions.jpg" alt="Earth Hero browse actions"></div>
-          <div class="carousel-slide mobile-slide"><img src="my-actions.jpg" alt="Earth Hero my actions"></div>
-        </div>
-        <div class="scroll-hint">Scroll to explore</div>
-      </div>
-      <div class="carousel-controls">
-        <div class="carousel-dots">
-          <button class="carousel-dot active"></button>
-          <button class="carousel-dot"></button>
-          <button class="carousel-dot"></button>
-        </div>
-        <span class="carousel-count">1 / 3</span>
-        <div class="carousel-arrows">
-          <button class="carousel-btn prev">←</button>
-          <button class="carousel-btn next">→</button>
-        </div>
-      </div>
+    <div class="mobile-grid">
+      <img src="earth-hero-homepage.jpg" alt="Earth Hero homepage" class="mobile-img">
+      <img src="browse-actions.jpg" alt="Earth Hero browse actions" class="mobile-img">
+      <img src="my-actions.jpg" alt="Earth Hero my actions" class="mobile-img">
     </div>
   </div>
 
