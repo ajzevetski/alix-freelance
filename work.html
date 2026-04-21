@@ -99,6 +99,8 @@ nav {
 .scroll-hint::before { content: '↕'; font-size: 0.8rem; }
 .carousel-track-wrap { position: relative; }
 .carousel-track-wrap .scroll-hint { position: absolute; bottom: 1rem; left: 50%; transform: translateX(-50%); z-index: 10; }
+.carousel-slide.mobile-slide { height: 600px; background: #1a1a1a; justify-content: center; }
+.carousel-slide.mobile-slide img { width: auto; height: 100%; max-width: 100%; object-fit: contain; margin: 0 auto; display: block; position: static; }
 
 /* CAROUSEL CONTROLS */
 .carousel-controls { display: flex; align-items: center; justify-content: space-between; margin-top: 1.25rem; }
@@ -293,10 +295,11 @@ footer small { font-size: 0.7rem; color: var(--muted); opacity: 0.5; }
     <div class="carousel" data-carousel>
       <div class="carousel-track-wrap">
         <div class="carousel-track">
-          <div class="carousel-slide">Add screenshot 1</div>
-          <div class="carousel-slide">Add screenshot 2</div>
-          <div class="carousel-slide">Add screenshot 3</div>
+          <div class="carousel-slide mobile-slide"><img src="earth-hero-homepage.jpg" alt="Earth Hero homepage"></div>
+          <div class="carousel-slide mobile-slide"><img src="browse-actions.jpg" alt="Earth Hero browse actions"></div>
+          <div class="carousel-slide mobile-slide"><img src="my-actions.jpg" alt="Earth Hero my actions"></div>
         </div>
+        <div class="scroll-hint">Scroll to explore</div>
       </div>
       <div class="carousel-controls">
         <div class="carousel-dots">
